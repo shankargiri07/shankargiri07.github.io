@@ -95,3 +95,172 @@
     </body>
 </html>
 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    
+}
+.logo {
+    font-size: 28px;
+    margin-left: 40px;
+    color: rgb(231, 48, 15);
+}
+ul {
+    margin-right: 40px;
+    
+}
+ul li{
+    position: static;
+    width: 100px;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    justify-content: center;
+    padding: 10px;
+    
+}
+ul li a {
+   text-decoration: none; 
+   font-size: 18px;
+   padding: 2px;
+   color: whitesmoke;
+}
+a:hover {
+    transition: 1s;
+    color: rgb(54, 226, 20);
+}
+
+.maincontainer {
+    opacity: 0.9;
+    background-image: url(img/bg2.avif);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    text-align: center; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mainText {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.mainText h2 {
+    font-size: 34px;
+    animation: slide_up 1.4s ease;
+}
+.mainText h3 {
+    font-size: 34px;
+    animation: slide_up 2.1s ease;
+}
+.mainText button {
+   text-align: center;
+   margin-top: 10px;
+   width: 140px;
+   padding: 10px;
+   background: transparent;
+   color: whitesmoke;
+   font-size: 16px;
+   font-weight: 300px;
+   border: 2px solid #fff;
+   animation: slide_up 2.7s ease;
+}
+.mainText button:hover {
+    overflow: hidden;
+    border: 2px solid #F11353;
+    cursor: pointer; 
+    transition: 1s;
+}
+/* .bi-arrow-right {
+    margin-top: 10px;
+} */
+/* .bi-arrow-right {
+    position: absolute;
+    top: 81px;
+    margin-left: 4px;
+    animation: slide_up 1.0s ease;
+} */
+@keyframes slide_up {
+    0% {
+      transform: translateY(180PX)
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+.imglogocontainer {
+    overflow: hidden;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #eee;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.firstlogo > img{ 
+    width: 170px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: 1s;
+    overflow: hidden;
+}
+.firstlogo > img:hover {
+    padding: 10px;
+    width: 170px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 15px;
+    transition: 1s;
+}
+.sidecontainer1 {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sideimg {
+    width: 700px;
+    height: 500px;
+}
+.sideimg > img {
+    padding: 10px;
+    width: 700px;
+    height: 500px; 
+    animation: slide_right 1.4s ease;
+}
+.sidepara {
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
+} 
+@keyframes slide_right {
+    0% {
+      transform: translateX(30PX)
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
